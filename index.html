@@ -37,13 +37,12 @@
 
     <h2>1. Summary of On-Device Processing</h2>
     <p>ShrinkJet utilizes local hardware acceleration (on-device CPU, GPU, and Neural engines) to process your data.</p>
-    <ul>
-        <li><strong>Image Compression & Edits:</strong> Files you select or capture are compressed and optimized entirely on-device using local silicon.</li>
-        <li><strong>Ghost Mode (Metadata Stripping):</strong> Exif metadata (such as GPS location coordinates, camera model, and timestamps) is stripped locally before saving.</li>
-        <li><strong>Neural Healing:</strong> Edge reconstruction and detail enhancement are executed offline using on-device machine learning models.</li>
-        <li><strong>Document Scanning & OCR:</strong> Paper-to-digital scanning and text extraction (OCR) are performed completely locally on-device.</li>
-        <li><strong>Storage:</strong> We do not store, intercept, or transmit your media files. Your processed images are saved directly to your device's local gallery or public media directories.</li>
-    </ul>
+ <ul>
+    <li><strong>Image Compression & Edits:</strong> Files you select or capture are compressed and optimized entirely on-device using local silicon.</li>
+    <li><strong>Ghost Mode (Metadata Stripping):</strong> Exif metadata (such as GPS location coordinates, camera model, and timestamps) is stripped locally before saving.</li>
+    <li><strong>Neural Healing & Document Scanning (OCR):</strong> Edge reconstruction, paper-to-digital scanning, and text extraction (OCR) are executed completely locally. Our offline OCR and edge reconstruction utilize Google ML Kit. While it processes all images locally without sending photos to the cloud, Google ML Kit may collect standard anonymous diagnostic telemetry (such as crash logs or model performance metrics) to improve its services.</li>
+    <li><strong>Storage:</strong> We do not store, intercept, or transmit your media files. Your processed images are saved directly to your device's local gallery or public media directories.</li>
+</ul>
 
     <h2>2. Information Collected by Third-Party Services</h2>
     <p>While we do not collect or upload your personal files, the App integrates third-party Software Development Kits (SDKs) to facilitate advertisements and in-app subscription features. These services collect and process data in accordance with their respective privacy policies:</p>
